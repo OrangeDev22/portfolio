@@ -22,7 +22,7 @@ const about = {
     learning and sharing new technologies.
     `,
   resume:
-    'https://drive.google.com/file/d/1isKH2iwv-W0XlOiry0tQBzFQyRkzqrir/view?usp=sharing',
+    'https://drive.google.com/file/d/1_hMi_jIzaCuqR39YAv1WwC11r4qVbiq0/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/gabriel-zuniga-83a8391a1/',
     github: 'https://github.com/OrangeDev22',
