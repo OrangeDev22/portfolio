@@ -6,6 +6,7 @@ import cropper1 from './images/cropper1.png'
 import simplechat1 from './images/simplechat1.jpg'
 import chat1 from './images/chat1.jpg'
 import profile1 from './images/profile1.png'
+import calendar1 from './images/calendar1.png'
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -74,11 +75,18 @@ const projects = [
     image: cropper1,
   },
   {
+    name: 'React Calendar',
+    description: `A calendar component where you can choose any date that has one or more meetings and renders a list based on that date. Built using typescript and tailwind`,
+    stack: ['TypeScript', 'React', 'Tailwind'],
+    sourceCode: 'https://github.com/OrangeDev22/react-calendar',
+    livePreview: 'https://reliable-daffodil-7aac49.netlify.app/',
+    image: calendar1,
+  },
+  {
     name: 'PROFILE GENERATOR',
     description:
       'Profile markup generator built with react typescript and tailwind.Write down any data you want to generate a profile markup and create dummy posts.',
     stack: ['Typescript', 'React', 'Context API', 'Tailwind'],
-    sourceCode: 'https://github.com/OrangeDev22/profile-markup-generator',
     livePreview: 'https://profile-markup-generator.netlify.app/',
     image: profile1,
   },
