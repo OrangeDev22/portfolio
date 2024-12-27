@@ -7,23 +7,19 @@ import simplechat1 from './images/simplechat1.jpg'
 import chat1 from './images/chat1.jpg'
 import profile1 from './images/profile1.png'
 import calendar1 from './images/calendar1.png'
+import mest from './images/mest.png'
 
 const header = {
-  // all the properties are optional - can be left empty or deleted
   homepage: '/',
-  title: 'JS',
+  title: 'Gabriel Zuniga | Web Developer',
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
   name: 'Gabriel Zuniga',
   role: 'Web Developer',
-  description: `I'm a web developer highly passionate about coding and embracing new
-    challenges. Always looking forward to improving as a professional as well as
-    learning and sharing new technologies.
-    `,
+  description: `I am a passionate web developer dedicated to building efficient and scalable web applications. I enjoy taking on new challenges and continuously improving my skills. My focus is on creating user-friendly interfaces and optimizing the development process using modern technologies.`,
   resume:
-    'https://drive.google.com/file/d/1deQ1urLt36UCMvzYsGK0BA1LKUdBsbBi/view?usp=sharing',
+    'https://drive.google.com/file/d/1e_sTpiEkJTWjMIAyRe5fBlmd_TiqMV0T/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/gabriel-zuniga-83a8391a1/',
     github: 'https://github.com/OrangeDev22',
@@ -32,16 +28,35 @@ const about = {
 
 const projects = [
   {
+    name: 'MEST',
+    description: `A movie directory built with Next.js and Nest.js, featuring user authentication via Auth0. Users can search for movies using GraphQL and create a personal list of favorite movies.`,
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Zustand',
+      'Zod',
+      'PostgreSQL',
+      'Nest.js',
+      'Auth0',
+    ],
+    sourceCode: 'https://github.com/OrangeDev22/Mest',
+    livePreview: 'https://mest.netlify.app/',
+    image: mest,
+  },
+  {
     name: 'Todo List',
     description:
-      'A video games directory. Created using materialUI, and RAWG Video Games Database API. You can search any game you want and see where is available.',
+      'Task management app inspired by Trello, with user authentication and a drag-and-drop dashboard for organizing tasks across three lists. Data is securely stored in a SQL database.',
     stack: [
       'React',
-      'Typescript',
-      'NextJS',
+      'TypeScript',
+      'Next.js',
+      'Nest.js',
       'Context API',
-      'Tailwind',
-      'react-beautiful-dnd',
+      'Tailwind CSS',
+      'React Beautiful DnD',
       'PostgreSQL',
     ],
     sourceCode: 'https://github.com/OrangeDev22/todo-list',
@@ -50,96 +65,88 @@ const projects = [
     image2: todolist2,
   },
   {
-    name: 'MAZE GAME SEARCH',
+    name: 'Maze Game Search',
     description:
-      'A video games directory. Created using materialUI, and RAWG Video Games Database API. You can search any game you want and see where is available.',
-    stack: [
-      'React',
-      'Javascript',
-      'React',
-      'RAW API',
-      'Material-UI',
-      'Context API',
-    ],
+      'A game directory app using Material-UI and the RAWG Video Games Database API. Search for games and explore their availability across platforms.',
+    stack: ['React', 'JavaScript', 'RAW API', 'Material-UI', 'Context API'],
     sourceCode: 'https://github.com/OrangeDev22/maze-search-game-app',
     livePreview: 'https://wonderful-torvalds-6068b1.netlify.app/',
     image: maze1,
   },
   {
-    name: 'IMAGE CROPPER',
+    name: 'Image Cropper',
     description:
-      'Web app created using react-cropper, typescript, and tailwind. Select any image on your device to crop it to however you want it',
-    stack: ['TypeScript', 'React', 'Tailwind'],
+      'A web app built with React, TypeScript, and Tailwind CSS that lets you upload and crop images to your desired dimensions.',
+    stack: ['TypeScript', 'React', 'Tailwind CSS'],
     sourceCode: 'https://github.com/OrangeDev22/image-cropper',
     livePreview: 'https://sage-tanuki-f64d81.netlify.app/',
     image: cropper1,
   },
   {
     name: 'React Calendar',
-    description: `A calendar component where you can choose any date that has one or more meetings and renders a list based on that date. Built using typescript and tailwind`,
-    stack: ['TypeScript', 'React', 'Tailwind'],
+    description: `A calendar component that allows you to select dates and view a list of meetings scheduled for those dates. Built with TypeScript and Tailwind CSS.`,
+    stack: ['TypeScript', 'React', 'Tailwind CSS'],
     sourceCode: 'https://github.com/OrangeDev22/react-calendar',
     livePreview: 'https://reliable-daffodil-7aac49.netlify.app/',
     image: calendar1,
   },
   {
-    name: 'PROFILE GENERATOR',
+    name: 'Weather Report',
     description:
-      'Profile markup generator built with react typescript and tailwind.Write down any data you want to generate a profile markup and create dummy posts.',
-    stack: ['Typescript', 'React', 'Context API', 'Tailwind'],
-    livePreview: 'https://profile-markup-generator.netlify.app/',
-    image: profile1,
-  },
-  {
-    name: 'WEATHER REPORT',
-    description:
-      'Weather application built with open weather API. Asks you for your current location and gives you a weather forecast. You can see the daily and hourly forecast',
-    stack: ['React', 'Css', 'OW API', 'Javascript'],
+      'A weather app built with the OpenWeather API that provides current weather and forecasts based on your location. View hourly and daily weather reports.',
+    stack: ['React', 'CSS', 'OpenWeather API', 'JavaScript'],
     sourceCode: 'https://github.com/OrangeDev22/weather-report',
     livePreview: 'https://happy-edison-f4c7d9.netlify.app/',
     image: weather1,
   },
   {
-    name: 'SIMPLE GROUP CHAT',
+    name: 'Simple Group Chat',
     description:
-      'Simple live group chat created with bootstrap and using SocketIo. You can add contacts based on their user id and create chat rooms with one or more friends.',
-    stack: ['React', 'Bootstrap', 'Socket.IO', 'NodeJs'],
+      'A simple group chat app built with Bootstrap and Socket.IO. Users can add contacts and create chat rooms for one-on-one or group conversations.',
+    stack: ['React', 'Bootstrap', 'Socket.IO', 'Node.js'],
     sourceCode: 'https://github.com/OrangeDev22/simple-group-chat',
     livePreview: 'https://simple-group-chat.netlify.app/',
     image: simplechat1,
   },
   {
-    name: 'COMPLEX GROUP CHAT',
+    name: 'Complex Group Chat',
     description:
-      'A more complex group chat application. You can create your account with email, add, block, and send friend requests. Built using MaterialUi, Postgresql, and SoketIo.',
-    stack: ['React', 'Bootstrap', 'Socket.IO', 'NodeJs'],
-    livePreview: 'https://github.com/OrangeDev22/project-group-chat-app',
+      'A more feature-rich group chat app that allows users to create accounts, send friend requests, block users, and more. Built with Material-UI, PostgreSQL, and Socket.IO.',
+    stack: ['React', 'Bootstrap', 'Socket.IO', 'Node.js'],
+    sourceCode: 'https://github.com/OrangeDev22/project-group-chat-app',
+    livePreview: 'https://complex-group-chat-app.netlify.app/',
     image: chat1,
   },
 ]
 
 const skills = [
   'React',
-  'NodeJs',
-  'Javascript',
-  'TypeSCript',
+  'Node.js',
+  'JavaScript',
+  'TypeScript',
   'Hasura',
-  'Graphql',
-  'Postgresql',
+  'GraphQL',
+  'PostgreSQL',
   'SASS',
-  'Tailwind',
-  'NestJS',
+  'Tailwind CSS',
+  'Nest.js',
   'Socket.IO',
   'Redux',
-  'MaterialUi',
+  'Zustand',
+  'Material-UI',
   'Bootstrap',
-  'Html',
+  'Auth0',
+  'Express.js',
+  'HTML',
   'CSS',
   'Visual Studio Code',
   'Git',
   'Java',
   'SQL',
-  'MYSQL',
+  'MySQL',
+  'Cypress',
+  'Stripe',
+  'Playwright',
   'Firebase',
 ]
 
