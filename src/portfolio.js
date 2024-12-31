@@ -28,7 +28,7 @@ const about = {
 
 const projects = [
   {
-    name: 'MEST - movie directory',
+    name: 'MEST Movie Search',
     description: `A movie directory built with Next.js and Nest.js, featuring user authentication via Auth0. Users can search for movies using GraphQL and create a personal list of favorite movies.`,
     stack: [
       'Next.js',
