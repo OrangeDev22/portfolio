@@ -28,7 +28,7 @@ const about = {
 
 const projects = [
   {
-    name: 'MEST',
+    name: 'MEST - movie directory',
     description: `A movie directory built with Next.js and Nest.js, featuring user authentication via Auth0. Users can search for movies using GraphQL and create a personal list of favorite movies.`,
     stack: [
       'Next.js',
@@ -41,7 +41,7 @@ const projects = [
       'Nest.js',
       'Auth0',
     ],
-    sourceCode: 'https://github.com/OrangeDev22/Mest',
+    sourceCode: 'https://github.com/OrangeDev22/mest-movie-library',
     livePreview: 'https://mest.netlify.app/',
     image: mest,
   },
