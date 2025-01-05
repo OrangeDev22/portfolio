@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1a9b083a.chunk.css",
-    "main.js": "/portfolio/static/js/main.3a44de39.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3a44de39.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.a20e0077.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a20e0077.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0600a859.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0600a859.js.map",
     "static/js/2.1ff24b7f.chunk.js": "/portfolio/static/js/2.1ff24b7f.chunk.js",
@@ -17,7 +17,7 @@
     "static/media/mest.9534f70b.png": "/portfolio/static/media/mest.9534f70b.png",
     "static/media/profile1.bbb6e0f0.png": "/portfolio/static/media/profile1.bbb6e0f0.png",
     "static/media/simplechat1.1825e1e8.jpg": "/portfolio/static/media/simplechat1.1825e1e8.jpg",
-    "static/media/todolist1.d15ad246.png": "/portfolio/static/media/todolist1.d15ad246.png",
+    "static/media/todolist1.0af184c1.png": "/portfolio/static/media/todolist1.0af184c1.png",
     "static/media/todolist2.99394b61.png": "/portfolio/static/media/todolist2.99394b61.png",
     "static/media/weather1.8c64eec7.jpg": "/portfolio/static/media/weather1.8c64eec7.jpg"
   },
@@ -25,6 +25,6 @@
     "static/js/runtime-main.0600a859.js",
     "static/js/2.1ff24b7f.chunk.js",
     "static/css/main.1a9b083a.chunk.css",
-    "static/js/main.3a44de39.chunk.js"
+    "static/js/main.a20e0077.chunk.js"
   ]
 }
