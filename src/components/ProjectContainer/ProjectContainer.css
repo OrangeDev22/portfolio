@@ -4,6 +4,8 @@
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
 }
 
 .project:hover {
@@ -18,7 +20,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1.2em 0;
+  margin: auto 0;
+  padding: 1.2em 0;
 }
 
 .project__stack-item {
@@ -30,8 +33,9 @@
   background-color: var(--inr-item);
 }
 
-.project .link--icon {
-  margin-left: 0.5em;
+.project .link-button {
+  padding: 0.5em;
+  background-color: var(--inr-item);
 }
 
 .project-image {

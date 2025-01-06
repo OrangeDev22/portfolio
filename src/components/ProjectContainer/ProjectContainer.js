@@ -27,29 +27,39 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
 
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='link link--icon'
-        target='_blank'
-        rel='noreferrer'
-      >
-        <GitHubIcon />
-      </a>
-    )}
+    <div
+      style={{
+        display: 'flex',
+        gap: '0.5rem',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 'auto',
+      }}
+    >
+      {project.sourceCode && (
+        <a
+          href={project.sourceCode}
+          aria-label='source code'
+          className='btn btn--plain'
+          target='_blank'
+          rel='noreferrer'
+        >
+          Github
+        </a>
+      )}
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label='live preview'
-        className='link link--icon'
-        target='_blank'
-        rel='noreferrer'
-      >
-        <LaunchIcon />
-      </a>
-    )}
+      {project.livePreview && (
+        <a
+          href={project.livePreview}
+          aria-label='live preview'
+          className='btn btn--plain'
+          target='_blank'
+          rel='noreferrer'
+        >
+          Demo
+        </a>
+      )}
+    </div>
   </div>
 )
 

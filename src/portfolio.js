@@ -19,7 +19,7 @@ const about = {
   role: 'Web Developer',
   description: `I am a passionate web developer dedicated to building efficient and scalable web applications. I enjoy taking on new challenges and continuously improving my skills. My focus is on creating user-friendly interfaces and optimizing the development process using modern technologies.`,
   resume:
-    'https://drive.google.com/file/d/1e_sTpiEkJTWjMIAyRe5fBlmd_TiqMV0T/view?usp=sharing',
+    'https://docs.google.com/document/d/e/2PACX-1vS6V-FtdcYi5s9uJjhq0n8bI8W42GsRGFPLmpMaq4K9VSl6AZTZvp3QJefesmPXX1D9IBkLiVeKgTPS/pub',
   social: {
     linkedin: 'https://www.linkedin.com/in/gabriel-zuniga-83a8391a1/',
     github: 'https://github.com/OrangeDev22',
