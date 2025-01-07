@@ -1,15 +1,17 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
+import Container from '../Container'
+import AnimatedTitle from '../AnimatedTitle'
 
 const ProjectShowcase = ({ projects }) => {
   return (
-    <div className='flex flex-col items-center justify-center my-32 gap-8 max-w-6xl mx-auto'>
-      <h2 className='text-4xl font-bold text-violet-400'>My Projects</h2>
+    <Container>
+      <AnimatedTitle>Projects</AnimatedTitle>
 
       <div className='flex flex-col gap-8 w-full'>
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className='relative w-full'
+            className='relative w-full hover:bg-slate-800 hover:shadow-md  transition-colors rounded-md'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -72,7 +74,7 @@ const ProjectShowcase = ({ projects }) => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </Container>
   )
 }
 

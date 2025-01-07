@@ -1,5 +1,8 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import ThemeToggle from '../ThemeToggle'
+import HamburgerMenu from '../HamburgerMenu'
+import { headerItems } from '../../utils'
+import HeaderItem from '../HeaderItem'
 
 const Header = () => {
   return (
@@ -14,56 +17,25 @@ const Header = () => {
       </motion.h3>
       <div className='flex gap-4 items-center text-lg ml-auto relative'>
         <motion.div
-          className='flex gap-4 items-center'
+          className='md:flex md:gap-4 items-center hidden md:block'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1, ease: 'easeOut' }}
         >
-          <motion.a
-            href='/#'
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            About
-          </motion.a>
-          <motion.a
-            href='/#'
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Skills
-          </motion.a>
-          <motion.a
-            href='/#'
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Experience
-          </motion.a>
-          <motion.a
-            href='/#'
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Projects
-          </motion.a>
-          <motion.a
-            href='/#'
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Resume
-          </motion.a>
+          {headerItems.map(({ text, url }) => (
+            <HeaderItem hrfe={url} text={text} />
+          ))}
         </motion.div>
 
-        <motion.div
+        <HamburgerMenu />
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.5, ease: 'easeOut' }}
           className='flex justify-center'
         >
           <ThemeToggle />
-        </motion.div>
+        </motion.div> */}
       </div>
     </header>
   )

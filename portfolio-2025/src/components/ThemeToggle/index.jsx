@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(() => {
