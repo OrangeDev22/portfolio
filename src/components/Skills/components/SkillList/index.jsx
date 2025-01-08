@@ -1,4 +1,4 @@
-import SkillCard from "../../../SkillCard";
+import SkillCard from "../SkillCard";
 
 const SkillList = ({ skills, name }) => {
   return (
