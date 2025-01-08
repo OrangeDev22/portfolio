@@ -6,6 +6,8 @@ import Container from "../Container";
 import AnimatedTitle from "../AnimatedTitle";
 import { experiences } from "../../utils";
 import AnimatedWrapper from "../AnimatedWrapper";
+import ExperienceHeader from "./components/ExperienceHeader";
+import ExperienceContent from "./components/ExperienceContent";
 
 const JobExperiences = () => {
   return (
@@ -18,31 +20,15 @@ const JobExperiences = () => {
             className="flex items-start space-x-4 hover:bg-slate-800 transition-colors duration-300 p-4 rounded-md hover:shadow-md"
           >
             <div className="max-w-5xl">
-              <div className="w-full flex flex-col md:flex-row items-center gap-2 mb-4 text-lg font-semibold">
-                <div className="flex gap-2 items-center">
-                  <span className="text-2xl">{experience.title}</span>
-                  {experience.companyUrl && (
-                    <a
-                      href={experience.companyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-500 hover:text-blue-700"
-                    >
-                      <FaExternalLinkAlt />
-                    </a>
-                  )}
-                </div>
-                <div className="md:ml-auto text-right text-gray-500 font-medium">
-                  {experience.date}
-                </div>
-              </div>
-              <div className="mt-1 text-gray-400">{experience.description}</div>
-              <div className="mt-2  text-gray-400 text-lg">
-                <strong>Made with:</strong>{" "}
-                <span className="text-violet-200">
-                  {experience.skills.join(", ")}.
-                </span>
-              </div>
+              <ExperienceHeader
+                companyUrl={experience.companyUrl}
+                date={experience.date}
+                title={experience.title}
+              />
+              <ExperienceContent
+                description={experience.description}
+                skills={experience.skills}
+              />
             </div>
           </AnimatedWrapper>
         ))}
