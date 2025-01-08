@@ -7,7 +7,7 @@ import {
   miscellaneousSkills,
   stylingSkills,
 } from "../../utils";
-import SkillList from "../SkillList";
+import SkillList from "./components/SkillList";
 import AnimatedWrapper from "../AnimatedWrapper";
 
 const Skills = () => {
