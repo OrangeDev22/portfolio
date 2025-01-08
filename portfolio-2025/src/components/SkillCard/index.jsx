@@ -4,8 +4,7 @@ import { motion } from 'motion/react'
 const SkillCard = ({ skill }) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.1, rotate: 2 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.1 }}
       className='bg-violet-400 text-violet-100 p-2 rounded-lg shadow-lg flex items-center justify-center cursor-pointer'
     >
       <span className='font-medium'>{skill}</span>

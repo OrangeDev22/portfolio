@@ -1,20 +1,28 @@
 import todolist1 from './images/todolist1.png'
-import todolist2 from './images/todolist2.png'
 import maze1 from './images/maze1.jpg'
 import weather1 from './images/weather1.jpg'
 import cropper1 from './images/cropper1.png'
 import simplechat1 from './images/simplechat1.jpg'
 import chat1 from './images/chat1.jpg'
-import profile1 from './images/profile1.png'
 import calendar1 from './images/calendar1.png'
+import chess from './images/chess.png'
 import mest from './images/mest.png'
 
+export const resumeUrl =
+  'https://drive.google.com/file/d/1YBFsK2zfbR-0kveg8BfINW6NaF4A7GSh/view?usp=sharing'
+
+export const socials = {
+  github: 'https://github.com/OrangeDev22',
+  linkedin: 'https://www.linkedin.com/in/orangedev/',
+  email: 'gabrielzunigakz@gmail.com',
+}
+
 export const headerItems = [
-  { text: 'About', url: '/#' },
-  { text: 'Skills', url: '/#' },
-  { text: 'Experience', url: '/#' },
-  { text: 'Projects', url: '/#' },
-  { text: 'Resume', url: '/#' },
+  { text: 'About', url: '/#about' },
+  { text: 'Skills', url: '/#skills' },
+  { text: 'Experience', url: '/#experience' },
+  { text: 'Projects', url: '/#projects' },
+  { text: 'Resume', url: resumeUrl, target: '_blank' },
 ]
 
 export const fullStackSkills = [
@@ -35,6 +43,7 @@ export const fullStackSkills = [
   'MySQL',
   'Stripe',
   'Firebase',
+  'JQuery',
 ]
 
 export const stylingSkills = [
@@ -136,7 +145,7 @@ export const projects = [
       'Auth0',
     ],
     githubUrl: 'https://github.com/OrangeDev22/mest-movie-library',
-    livePreview: 'https://mest.netlify.app/',
+    demoUrl: 'https://mest.netlify.app/',
     image: mest,
   },
   {
@@ -210,5 +219,13 @@ export const projects = [
     skills: ['React', 'Bootstrap', 'Socket.IO', 'Node.js'],
     githubUrl: 'https://github.com/OrangeDev22/project-group-chat-app',
     image: chat1,
+  },
+  {
+    title: 'Vanilla JavaScript Chess',
+    description: `A simple chess game made using Vanilla JavaScript. It supports all chess moves and can be played by two people.`,
+    skills: ['JavaScript', 'CSS', 'HTML'],
+    githubUrl: 'https://github.com/OrangeDev22/js-chess-game',
+    demoUrl: 'https://simple-chess-game.netlify.app/',
+    image: chess,
   },
 ]

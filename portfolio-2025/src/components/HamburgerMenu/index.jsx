@@ -3,6 +3,7 @@ import { motion } from 'motion/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { headerItems } from '../../utils'
 import HeaderItem from '../HeaderItem'
+
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -12,7 +13,6 @@ const HamburgerMenu = () => {
 
   return (
     <div className='relative block md:hidden'>
-      {/* Hamburger Icon */}
       <button
         onClick={toggleMenu}
         className='z-50 p-2 text-white rounded-md focus:outline-none'
@@ -24,7 +24,6 @@ const HamburgerMenu = () => {
         )}
       </button>
 
-      {/* Fullscreen Menu */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -39,25 +38,14 @@ const HamburgerMenu = () => {
             <XMarkIcon className='w-8 h-8' />
           </button>
 
-          <div className='space-y-6 text-center flex flex-col'>
+          <div
+            className='space-y-6 text-center flex flex-col'
+            onClick={toggleMenu}
+          >
             {headerItems.map(({ text, url }) => (
-              <HeaderItem hrfe={url} text={text} />
+              <HeaderItem href={url} text={text} />
             ))}
           </div>
-          {/* <ul className='space-y-6 text-center'>
-            <li className='text-2xl font-bold hover:text-gray-400'>
-              <a href='#'>Home</a>
-            </li>
-            <li className='text-2xl font-bold hover:text-gray-400'>
-              <a href='#'>About</a>
-            </li>
-            <li className='text-2xl font-bold hover:text-gray-400'>
-              <a href='#'>Services</a>
-            </li>
-            <li className='text-2xl font-bold hover:text-gray-400'>
-              <a href='#'>Contact</a>
-            </li>
-          </ul> */}
         </motion.div>
       )}
     </div>

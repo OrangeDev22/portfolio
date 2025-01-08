@@ -1,9 +1,13 @@
 import { motion } from 'motion/react'
+import Socials from '../Socials'
+import { resumeUrl } from '../../utils'
 
 const AboutMe = () => {
   return (
-    <div className='flex flex-col mx-auto items-center justify-center my-32 text-center gap-8'>
-      {/* Animated Title */}
+    <div
+      className='flex flex-col mx-auto items-center justify-center my-32 text-center gap-8'
+      id='about'
+    >
       <motion.div
         className='text-5xl text-violet-200 max-w-xl'
         initial={{ opacity: 0, y: -20 }}
@@ -22,7 +26,6 @@ const AboutMe = () => {
         .<br /> I'm a Software Developer.
       </motion.div>
 
-      {/* Animated Description */}
       <motion.div
         className='text-xl max-w-3xl'
         initial={{ opacity: 0, y: 20 }}
@@ -35,20 +38,20 @@ const AboutMe = () => {
         challenges to grow both personally and professionally.
       </motion.div>
 
-      {/* Styled and Animated Button */}
-      <motion.button
-        className='px-6 py-3 bg-violet-400 text-white text-lg font-medium rounded-lg shadow-lg transition-transform duration-300'
-        initial={{ scale: 1, boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}
-        whileHover={{
-          scale: 1.1,
-          backgroundColor: '#7c3aed',
-          boxShadow: '0 8px 24px rgba(124, 58, 237, 0.4)',
-        }}
-        whileTap={{ scale: 0.95 }}
-        animate={{ scale: 1, backgroundColor: '#8b5cf6' }}
-      >
-        Get my resume
-      </motion.button>
+      <Socials />
+
+      <a href={resumeUrl} target='_blank'>
+        <motion.button
+          className='px-6 py-3 bg-violet-400 text-white text-lg font-medium rounded-lg shadow-lg transition-transform duration-300'
+          whileHover={{ scale: 1.1, rotate: 2 }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ scale: 1, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.05 }}
+        >
+          Get my resume
+        </motion.button>
+      </a>
     </div>
   )
 }

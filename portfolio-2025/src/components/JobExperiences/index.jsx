@@ -8,7 +8,7 @@ import { experiences } from '../../utils'
 
 const JobExperiences = () => {
   return (
-    <Container>
+    <Container id='experience'>
       <AnimatedTitle>Experience</AnimatedTitle>
       <div className='space-y-8'>
         {experiences.map((experience, index) => (

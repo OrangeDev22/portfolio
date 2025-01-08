@@ -11,10 +11,10 @@ import SkillList from '../SkillList'
 
 const Skills = () => {
   return (
-    <Container>
+    <Container id='skills'>
       <AnimatedTitle>Skills</AnimatedTitle>
       <motion.div
-        className='space-y-12 max-w-5xl transition-colors duration-300 rounded-md hover:shadow-md'
+        className='space-y-12 max-w-5xl transition-colors duration-300'
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}

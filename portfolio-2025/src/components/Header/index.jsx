@@ -1,5 +1,4 @@
 import { motion } from 'motion/react'
-import ThemeToggle from '../ThemeToggle'
 import HamburgerMenu from '../HamburgerMenu'
 import { headerItems } from '../../utils'
 import HeaderItem from '../HeaderItem'
@@ -22,20 +21,12 @@ const Header = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1, ease: 'easeOut' }}
         >
-          {headerItems.map(({ text, url }) => (
-            <HeaderItem hrfe={url} text={text} />
+          {headerItems.map(({ text, url, target }) => (
+            <HeaderItem href={url} text={text} target={target} />
           ))}
         </motion.div>
 
         <HamburgerMenu />
-        {/* <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.5, ease: 'easeOut' }}
-          className='flex justify-center'
-        >
-          <ThemeToggle />
-        </motion.div> */}
       </div>
     </header>
   )
