@@ -1,3 +1,14 @@
+import todolist1 from './images/todolist1.png'
+import todolist2 from './images/todolist2.png'
+import maze1 from './images/maze1.jpg'
+import weather1 from './images/weather1.jpg'
+import cropper1 from './images/cropper1.png'
+import simplechat1 from './images/simplechat1.jpg'
+import chat1 from './images/chat1.jpg'
+import profile1 from './images/profile1.png'
+import calendar1 from './images/calendar1.png'
+import mest from './images/mest.png'
+
 export const headerItems = [
   { text: 'About', url: '/#' },
   { text: 'Skills', url: '/#' },
@@ -105,5 +116,99 @@ Refactored code to improve readability, maintainability, and performance.
 Implemented new features and enhanced existing functionalities to meet business goals.
 Collaborated with cross-functional teams to deliver high-quality solutions on time.`,
     skills: ['React', 'HTML5', 'JavaSCript', 'CSS'],
+  },
+]
+
+export const projects = [
+  {
+    title: 'MEST Movie Search',
+    description: `A movie directory built with Next.js and Nest.js, featuring user authentication via Auth0. Users can search for movies using GraphQL and create a personal list of favorite movies.`,
+    skills: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Zustand',
+      'Zod',
+      'PostgreSQL',
+      'Context API',
+      'Nest.js',
+      'Auth0',
+    ],
+    githubUrl: 'https://github.com/OrangeDev22/mest-movie-library',
+    livePreview: 'https://mest.netlify.app/',
+    image: mest,
+  },
+  {
+    title: 'Todo List',
+    description:
+      'Task management app inspired by Trello, with user authentication and a drag-and-drop dashboard for organizing tasks across multiple boards. Data is securely stored in a SQL database.',
+    skills: [
+      'React',
+      'TypeScript',
+      'Node.Js',
+      'PostgreSQL',
+      'ExpressJs',
+      'Nest.js',
+      'Redux',
+      'Motion',
+      'Tailwind CSS',
+      'React Beautiful DnD',
+    ],
+    githubUrl: 'https://github.com/OrangeDev22/todo-list',
+    demoUrl: 'https://todo-list-orange.netlify.app/',
+    image: todolist1,
+  },
+  {
+    title: 'Maze Game Search',
+    description:
+      'A game directory app using Material-UI and the RAWG Video Games Database API. Search for games and explore their availability across platforms.',
+    skills: ['React', 'JavaScript', 'RAW API', 'Material-UI', 'Context API'],
+    githubUrl: 'https://github.com/OrangeDev22/maze-search-game-app',
+    demoUrl: 'https://wonderful-torvalds-6068b1.netlify.app/',
+    image: maze1,
+  },
+  {
+    title: 'Image Cropper',
+    description:
+      'A web app built with React, TypeScript, and Tailwind CSS that lets you upload and crop images to your desired dimensions.',
+    skills: ['TypeScript', 'React', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/OrangeDev22/image-cropper',
+    demoUrl: 'https://sage-tanuki-f64d81.netlify.app/',
+    image: cropper1,
+  },
+  {
+    title: 'React Calendar',
+    description: `A calendar component that allows you to select dates and view a list of meetings scheduled for those dates. Built with TypeScript and Tailwind CSS.`,
+    skills: ['TypeScript', 'React', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/OrangeDev22/react-calendar',
+    demoUrl: 'https://reliable-daffodil-7aac49.netlify.app/',
+    image: calendar1,
+  },
+  {
+    title: 'Weather Report',
+    description:
+      'A weather app built with the OpenWeather API that provides current weather and forecasts based on your location. View hourly and daily weather reports.',
+    skills: ['React', 'CSS', 'OpenWeather API', 'JavaScript'],
+    githubUrl: 'https://github.com/OrangeDev22/weather-report',
+    demoUrl: 'https://happy-edison-f4c7d9.netlify.app/',
+    image: weather1,
+  },
+  {
+    title: 'Simple Group Chat',
+    description:
+      'A simple group chat app built with Bootstrap and Socket.IO. Users can add contacts and create chat rooms for one-on-one or group conversations.',
+    skills: ['React', 'Bootstrap', 'Socket.IO', 'Node.js'],
+    githubUrl: 'https://github.com/OrangeDev22/simple-group-chat',
+    demoUrl: 'https://simple-group-chat.netlify.app/',
+    image: simplechat1,
+  },
+  {
+    title: 'Complex Group Chat',
+    description:
+      'A more feature-rich group chat app that allows users to create accounts, send friend requests, block users, and more. Built with Material-UI, PostgreSQL, and Socket.IO.',
+    skills: ['React', 'Bootstrap', 'Socket.IO', 'Node.js'],
+    githubUrl: 'https://github.com/OrangeDev22/project-group-chat-app',
+    image: chat1,
   },
 ]
