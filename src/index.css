@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+body {
+  background-color: #1f2937;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
