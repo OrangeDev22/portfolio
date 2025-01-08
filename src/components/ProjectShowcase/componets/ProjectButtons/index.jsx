@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const ProjectButtons = ({ demoUrl, githubUrl }) => {
   return (
     <div className="flex gap-4">
-      {project.demoUrl && (
+      {demoUrl && (
         <motion.a
           href={demoUrl}
           target="_blank"
