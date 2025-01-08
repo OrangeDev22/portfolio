@@ -7,7 +7,7 @@ const ProjectShowcase = ({ projects }) => {
     <Container>
       <AnimatedTitle>Projects</AnimatedTitle>
 
-      <div className='flex flex-col gap-8 w-full'>
+      <div className='flex flex-col gap-8 w-full max-w-5xl'>
         {projects.map((project, index) => (
           <motion.div
             key={index}

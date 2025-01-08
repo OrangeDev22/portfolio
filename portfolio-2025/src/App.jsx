@@ -6,6 +6,7 @@ import SocialLinks from './components/SocialLinks'
 import ProjectShowcase from './components/ProjectShowcase'
 import JobExperiences from './components/JobExperiences'
 import SkillList from './components/Skills'
+import Contact from './components/Contact'
 
 const experiences = [
   {
@@ -51,6 +52,7 @@ function App() {
             },
           ]}
         />
+        <Contact />
       </main>
       <SocialLinks />
     </div>

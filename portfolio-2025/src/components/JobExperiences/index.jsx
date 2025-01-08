@@ -4,8 +4,9 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'motion/react'
 import Container from '../Container'
 import AnimatedTitle from '../AnimatedTitle'
+import { experiences } from '../../utils'
 
-const JobExperiences = ({ experiences }) => {
+const JobExperiences = () => {
   return (
     <Container>
       <AnimatedTitle>Experience</AnimatedTitle>
@@ -19,26 +20,31 @@ const JobExperiences = ({ experiences }) => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             viewport={{ once: true }}
           >
-            <div className='w-1/4 text-right text-gray-500 font-medium'>
-              {experience.date}
-            </div>
-            <div className='w-3/4'>
-              <div className='flex items-center space-x-2 text-lg font-semibold '>
-                <span>{experience.title}</span>
-                {experience.companyUrl && (
-                  <a
-                    href={experience.companyUrl}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='text-blue-500 hover:text-blue-700'
-                  >
-                    <FaExternalLinkAlt />
-                  </a>
-                )}
+            <div className='max-w-5xl'>
+              <div className='w-full flex flex-col md:flex-row items-center gap-2 mb-4 text-lg font-semibold'>
+                <div className='flex gap-2'>
+                  <span className='text-2xl'>{experience.title}</span>
+                  {experience.companyUrl && (
+                    <a
+                      href={experience.companyUrl}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-blue-500 hover:text-blue-700'
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+                  )}
+                </div>
+                <div className='md:ml-auto text-right text-gray-500 font-medium'>
+                  {experience.date}
+                </div>
               </div>
               <div className='mt-1 text-gray-400'>{experience.description}</div>
-              <div className='mt-2 text-sm text-gray-600'>
-                <strong>Skills:</strong> {experience.skills.join(', ')}
+              <div className='mt-2  text-gray-400 text-lg'>
+                <strong>Made with:</strong>{' '}
+                <span className='text-violet-200'>
+                  {experience.skills.join(', ')}.
+                </span>
               </div>
             </div>
           </motion.div>
