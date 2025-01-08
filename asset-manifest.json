@@ -1,30 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.155828d8.chunk.css",
-    "main.js": "/portfolio/static/js/main.ee02fd63.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ee02fd63.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.0600a859.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0600a859.js.map",
-    "static/js/2.0bb07f8d.chunk.js": "/portfolio/static/js/2.0bb07f8d.chunk.js",
-    "static/js/2.0bb07f8d.chunk.js.map": "/portfolio/static/js/2.0bb07f8d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.d574c9ea.css",
+    "main.js": "/portfolio/static/js/main.b05a919c.js",
+    "static/js/488.86da3143.chunk.js": "/portfolio/static/js/488.86da3143.chunk.js",
+    "static/media/mest.png": "/portfolio/static/media/mest.9534f70b9a4686a83261.png",
+    "static/media/todolist1.png": "/portfolio/static/media/todolist1.0af184c1034621030d99.png",
+    "static/media/cropper1.png": "/portfolio/static/media/cropper1.a95ab944e4ffadadf810.png",
+    "static/media/maze1.jpg": "/portfolio/static/media/maze1.de3e44d985d150b45739.jpg",
+    "static/media/simplechat1.jpg": "/portfolio/static/media/simplechat1.1825e1e89d8b7985e326.jpg",
+    "static/media/calendar1.png": "/portfolio/static/media/calendar1.349443cf16edb8766a15.png",
+    "static/media/chess.png": "/portfolio/static/media/chess.97e981f7e903e5718735.png",
+    "static/media/weather1.jpg": "/portfolio/static/media/weather1.8c64eec75f35078b348d.jpg",
+    "static/media/chat1.jpg": "/portfolio/static/media/chat1.b3b961198ea948b4aa0e.jpg",
     "index.html": "/portfolio/index.html",
-    "static/css/main.155828d8.chunk.css.map": "/portfolio/static/css/main.155828d8.chunk.css.map",
-    "static/js/2.0bb07f8d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.0bb07f8d.chunk.js.LICENSE.txt",
-    "static/media/calendar1.349443cf.png": "/portfolio/static/media/calendar1.349443cf.png",
-    "static/media/chat1.b3b96119.jpg": "/portfolio/static/media/chat1.b3b96119.jpg",
-    "static/media/cropper1.a95ab944.png": "/portfolio/static/media/cropper1.a95ab944.png",
-    "static/media/maze1.de3e44d9.jpg": "/portfolio/static/media/maze1.de3e44d9.jpg",
-    "static/media/mest.9534f70b.png": "/portfolio/static/media/mest.9534f70b.png",
-    "static/media/profile1.bbb6e0f0.png": "/portfolio/static/media/profile1.bbb6e0f0.png",
-    "static/media/simplechat1.1825e1e8.jpg": "/portfolio/static/media/simplechat1.1825e1e8.jpg",
-    "static/media/todolist1.0af184c1.png": "/portfolio/static/media/todolist1.0af184c1.png",
-    "static/media/todolist2.99394b61.png": "/portfolio/static/media/todolist2.99394b61.png",
-    "static/media/weather1.8c64eec7.jpg": "/portfolio/static/media/weather1.8c64eec7.jpg"
+    "main.d574c9ea.css.map": "/portfolio/static/css/main.d574c9ea.css.map",
+    "main.b05a919c.js.map": "/portfolio/static/js/main.b05a919c.js.map",
+    "488.86da3143.chunk.js.map": "/portfolio/static/js/488.86da3143.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.0600a859.js",
-    "static/js/2.0bb07f8d.chunk.js",
-    "static/css/main.155828d8.chunk.css",
-    "static/js/main.ee02fd63.chunk.js"
+    "static/css/main.d574c9ea.css",
+    "static/js/main.b05a919c.js"
   ]
 }
