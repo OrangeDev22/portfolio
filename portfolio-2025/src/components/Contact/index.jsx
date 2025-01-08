@@ -32,7 +32,7 @@ const Contact = () => {
                 gabrielzunigakz@gmail.com
               </a>
             </p>
-            <p className='text-lg font-medium text-gray-700'>
+            <p className='text-lg font-medium text-gray-400'>
               Phone:{' '}
               <a
                 href='tel:+50498842641'
