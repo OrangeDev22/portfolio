@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import Container from "../Container";
 import AnimatedTitle from "../AnimatedTitle";
 import { experiences } from "../../utils";
+import AnimatedWrapper from "../AnimatedWrapper";
 
 const JobExperiences = () => {
   return (
@@ -12,13 +13,9 @@ const JobExperiences = () => {
       <AnimatedTitle>Experience</AnimatedTitle>
       <div className="space-y-8">
         {experiences.map((experience, index) => (
-          <motion.div
+          <AnimatedWrapper
             key={index}
             className="flex items-start space-x-4 hover:bg-slate-800 transition-colors duration-300 p-4 rounded-md hover:shadow-md"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            viewport={{ once: true }}
           >
             <div className="max-w-5xl">
               <div className="w-full flex flex-col md:flex-row items-center gap-2 mb-4 text-lg font-semibold">
@@ -47,7 +44,7 @@ const JobExperiences = () => {
                 </span>
               </div>
             </div>
-          </motion.div>
+          </AnimatedWrapper>
         ))}
       </div>
     </Container>

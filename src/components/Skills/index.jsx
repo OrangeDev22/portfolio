@@ -8,18 +8,13 @@ import {
   stylingSkills,
 } from "../../utils";
 import SkillList from "../SkillList";
+import AnimatedWrapper from "../AnimatedWrapper";
 
 const Skills = () => {
   return (
     <Container id="skills">
       <AnimatedTitle>Skills</AnimatedTitle>
-      <motion.div
-        className="space-y-12 max-w-5xl transition-colors duration-300"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
+      <AnimatedWrapper className="space-y-12 max-w-5xl transition-colors duration-300">
         <div className="space-y-4">
           <h2 className="text-2xl font-bold">Full-Stack:</h2>
           <SkillList skills={fullStackSkills} name="full-stack" />
@@ -34,7 +29,7 @@ const Skills = () => {
           <h2 className="text-2xl font-bold">Miscellaneous:</h2>
           <SkillList skills={miscellaneousSkills} name="full-stack" />
         </div>
-      </motion.div>
+      </AnimatedWrapper>
     </Container>
   );
 };
