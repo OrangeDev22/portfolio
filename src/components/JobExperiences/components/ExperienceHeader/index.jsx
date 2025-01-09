@@ -2,7 +2,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ExperienceHeader = ({ title, companyUrl, date }) => {
   return (
-    <div className="w-full flex flex-col md:flex-row items-center gap-2 mb-4 text-lg font-semibold">
+    <div className="w-full flex flex-col md:flex-row sm:items-center gap-2 mb-4 text-lg font-semibold">
       <div className="flex gap-2 items-center">
         <span className="text-2xl">{title}</span>
         {companyUrl && (
@@ -16,9 +16,7 @@ const ExperienceHeader = ({ title, companyUrl, date }) => {
           </a>
         )}
       </div>
-      <div className="md:ml-auto text-right text-gray-500 font-medium">
-        {date}
-      </div>
+      <div className="md:ml-auto text-gray-500 font-medium">{date}</div>
     </div>
   );
 };
