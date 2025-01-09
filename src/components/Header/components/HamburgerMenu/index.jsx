@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import { headerItems } from "../../utils";
-import HeaderItem from "../Header/components/HeaderItem";
+import { headerItems } from "../../../../utils";
+import HeaderItem from "../HeaderItem";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

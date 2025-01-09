@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import HamburgerMenu from "../HamburgerMenu";
 import { headerItems } from "../../utils";
 import HeaderItem from "./components/HeaderItem";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 const Header = () => {
   return (
