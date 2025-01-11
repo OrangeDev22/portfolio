@@ -93,7 +93,7 @@ Enhanced codebase scalability and stability, improving uptime by 20% and optimiz
     ],
   },
   {
-    date: "Feb 2023 - Dec 2024",
+    date: "March 2021 - Jan 2023",
     title: "Full Stack Developer - Influexer",
     companyUrl: "https://influexer.com/",
     description: `Developed a React application from scratch, converting Figma designs into scalable, reusable components for a seamless UX.
