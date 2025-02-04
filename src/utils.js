@@ -27,7 +27,7 @@ export const headerItems = [
 
 export const fullStackSkills = [
   "React",
-  "NextJs",
+  "Next.js",
   "React Native",
   "NodeJs",
   "JavaScript",
@@ -74,14 +74,14 @@ export const experiences = [
     date: "Feb 2023 - Dec 2024",
     title: "Full Stack Developer - Trades.org",
     companyUrl: "https://www.trades.org",
-    description: `Collaborated with cross-functional teams to migrate micro frontend structures to NextJs, improving performance, scalability, and maintainability.
+    description: `Collaborated with cross-functional teams to migrate micro frontend structures to Next.js, improving performance, scalability, and maintainability.
 Led unit and component testing integration, boosting code coverage and reliability.
 Resolved performance bottlenecks, improving page load times by 10% and reducing error rates.
 Designed and integrated backend services with NestJS and GraphQL for efficient data handling.
 Enhanced codebase scalability and stability, improving uptime by 20% and optimizing development processes.`,
     skills: [
       "React",
-      "NextJs",
+      "Next.js",
       "NestJs",
       "Javascript",
       "Typescript",
@@ -105,7 +105,7 @@ Optimized performance, refactored code, and streamlined workflows for a maintain
 Delivered the product ahead of schedule, exceeding client expectations with an early release.`,
     skills: [
       "React",
-      "NextJs",
+      "Next.js",
       "NodeJs",
       "ExpressJs",
       "Javascript",
@@ -133,7 +133,7 @@ Collaborated with cross-functional teams to deliver high-quality solutions on ti
 export const projects = [
   {
     title: "MEST Movie Search",
-    description: `A movie directory built with NextJs and NestJs, featuring user authentication via Auth0. Users can search for movies using GraphQL and create a personal list of favorite movies.`,
+    description: `A movie directory built with Next.js and NestJs, featuring user authentication via Auth0. Users can search for movies using GraphQL and create a personal list of favorite movies.`,
     skills: [
       "Next.js",
       "React",
