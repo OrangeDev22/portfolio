@@ -9,6 +9,12 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  let x = 1;
+  if (true) {
+    let x = 2;
+    console.log(x);
+  }
+  console.log(x);
   return (
     <div className="min-h-screen md:px-20 bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 text-violet-200 font-nunito scroll-smooth">
       <Header />

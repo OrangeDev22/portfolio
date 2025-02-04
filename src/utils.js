@@ -27,6 +27,8 @@ export const headerItems = [
 
 export const fullStackSkills = [
   "React",
+  "NextJs",
+  "React Native",
   "NodeJs",
   "JavaScript",
   "TypeScript",
@@ -72,7 +74,7 @@ export const experiences = [
     date: "Feb 2023 - Dec 2024",
     title: "Full Stack Developer - Trades.org",
     companyUrl: "https://www.trades.org",
-    description: `Collaborated with cross-functional teams to migrate micro frontend structures to Next.js, improving performance, scalability, and maintainability.
+    description: `Collaborated with cross-functional teams to migrate micro frontend structures to NextJs, improving performance, scalability, and maintainability.
 Led unit and component testing integration, boosting code coverage and reliability.
 Resolved performance bottlenecks, improving page load times by 10% and reducing error rates.
 Designed and integrated backend services with NestJS and GraphQL for efficient data handling.
